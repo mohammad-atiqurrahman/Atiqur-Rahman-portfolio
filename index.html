@@ -92,3 +92,108 @@ footer { text-align: center; padding: 60px 0; border-top: 1px solid #1e293b; mar
 </div>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mohammad Atiqur Rahman | IT Entrepreneur</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+    /* Ash Colour Palette matching your photo background */
+    --primary: #cbd5e1; 
+    --accent: #94a3b8;  
+    --dark: #0f172a;    
+    --card-bg: rgba(30, 41, 59, 0.5); 
+    --text-main: #f8fafc;
+    --text-dim: #94a3b8;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Poppins', sans-serif; background: radial-gradient(circle at top, #1e293b, #020617); color: var(--text-main); scroll-behavior: smooth; }
+.container { max-width: 1100px; margin: auto; padding: 0 20px; }
+nav { position: sticky; top: 0; backdrop-filter: blur(12px); background: rgba(15, 23, 42, 0.7); padding: 20px 0; z-index: 1000; display: flex; justify-content: space-between; align-items: center; }
+.logo { font-size: 1.6rem; font-weight: 700; color: var(--primary); }
+.nav-links a { color: var(--text-main); margin-left: 20px; text-decoration: none; font-size: 0.9rem; }
+#hero { height: 95vh; display: flex; align-items: center; justify-content: center; text-align: center; }
+
+/* Photo Section Fixed */
+.profile-img { 
+    width: 180px; 
+    height: 180px; 
+    border-radius: 50%; 
+    border: 4px solid var(--accent); 
+    box-shadow: 0 0 40px rgba(148, 163, 184, 0.2); 
+    margin-bottom: 25px; 
+    object-fit: cover; 
+}
+
+h1 { font-size: 3.5rem; letter-spacing: -1px; line-height: 1.2; }
+.highlight { color: var(--primary); }
+.subtitle { margin: 15px 0; color: var(--text-dim); font-size: 1.2rem; }
+.stats { display: flex; justify-content: center; gap: 40px; margin-top: 30px; }
+.stat-item h3 { font-size: 2.2rem; color: var(--primary); }
+.stat-item p { font-size: 0.8rem; color: var(--text-dim); }
+.cta-btn { margin-top: 35px; padding: 14px 40px; background: linear-gradient(135deg, #64748b, #334155); border-radius: 50px; text-decoration: none; color: white; font-weight: 600; display: inline-block; transition: 0.3s; }
+.section-title { text-align: center; margin: 100px 0 50px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+.card { padding: 40px; border-radius: 20px; background: var(--card-bg); border: 1px solid rgba(203, 213, 225, 0.1); text-align: center; }
+.skills { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; }
+.skill { padding: 8px 18px; border-radius: 50px; border: 1px solid var(--accent); color: var(--primary); font-size: 0.8rem; font-weight: 600; }
+footer { text-align: center; padding: 60px 0; border-top: 1px solid #1e293b; margin-top: 80px; }
+.social-links a { margin: 0 15px; color: var(--text-dim); text-decoration: none; font-weight: 600; }
+</style>
+</head>
+<body>
+<nav class="container">
+    <div class="logo">AR.</div>
+    <div class="nav-links">
+        <a href="#hero">Home</a>
+        <a href="#projects">Ventures</a>
+        <a href="https://blog.atiqurrahman.com" target="_blank">Blog</a>
+        <a href="mailto:Hello@atiqurrahman.com">Contact</a>
+    </div>
+</nav>
+<div class="container">
+    <header id="hero">
+        <div>
+            <img src="Profile Photo copy.jpg" class="profile-img" alt="Mohammad Atiqur Rahman">
+            <h1>Hi, I'm <span class="highlight">Mohammad Atiqur Rahman</span></h1>
+            <p class="subtitle">IT Entrepreneur • Developer • Cybersecurity Enthusiast</p>
+            <div class="stats">
+                <div class="stat-item"><h3>4+</h3><p>Companies Founded</p></div>
+                <div class="stat-item"><h3>DIU</h3><p>CIS Student</p></div>
+                <div class="stat-item"><h3>Expert</h3><p>Python & JS</p></div>
+            </div>
+            <a href="mailto:Hello@atiqurrahman.com" class="cta-btn">Contact Me</a>
+        </div>
+    </header>
+    <section id="projects">
+        <div class="section-title"><h2>Current Ventures</h2></div>
+        <div class="grid">
+            <div class="card"><h3>Offshackle</h3><p>A sustainable ecosystem bridging the gap between talent and global opportunities.</p></div>
+            <div class="card"><h3>Blueingo</h3><p>Delivering high-end software solutions and creative brand identities.</p></div>
+        </div>
+    </section>
+    <section id="education">
+        <div class="section-title"><h2>Education & Skills</h2></div>
+        <div style="text-align: center; margin-bottom: 40px;">
+            <h3 style="color: var(--primary);">Daffodil International University</h3>
+            <p style="color: var(--text-dim);">Dept. of Computing and Information System</p>
+        </div>
+        <div class="skills">
+            <span class="skill">Python</span><span class="skill">JavaScript</span><span class="skill">PHP / Laravel</span>
+            <span class="skill">Cybersecurity</span><span class="skill">DevOps</span><span class="skill">Branding</span>
+        </div>
+    </section>
+    <footer>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/mohammad-atiqurrahman" target="_blank">LinkedIn</a>
+            <a href="https://github.com/mohammad-atiqurrahman" target="_blank">GitHub</a>
+            <a href="https://www.facebook.com/mohammadatiqurrahman.me/" target="_blank">Facebook</a>
+        </div>
+        <p style="margin-top: 30px; color: var(--text-dim); font-size: 0.9rem;">© 2026 Mohammad Atiqur Rahman | IT Entrepreneur & Innovator</p>
+    </footer>
+</div>
+</body>
+</html>
